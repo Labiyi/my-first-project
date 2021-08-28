@@ -1,0 +1,580 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, 'Geneva', Verdana, sans-serif;
+    line-height: 28px;
+    width: 100%;
+}
+
+h1{
+    text-transform: uppercase;
+    font-weight: 900;
+    padding: 55px 0px 35px;
+    letter-spacing: 20px;
+    font-family: 'Segoe UI', Tahoma, 'Geneva', Verdana, sans-serif;
+    font-size: 50px;
+}
+
+
+ /* navbar */
+.navbar{
+    background-color: rgb(15, 15, 15);
+    width: 100%;
+    padding: 15px;
+    display: flex;
+}
+
+.nav{
+    text-align: center;
+    width: 35%;
+}
+
+.nav a{
+    margin-left: 20px;
+    text-decoration: none;
+    padding: 11px;
+    color: rgb(207, 207, 207);
+}
+
+.nav a:hover{
+    background-color: rgb(31, 31, 31);
+    color: burlywood;
+}
+
+.logo{
+    width: 30%;
+}
+
+.logo a{
+    text-decoration: none;
+    margin-left: 25px;
+    font-size: 25px;
+    padding: 11px;
+    color: burlywood;
+}
+
+
+/* header */
+header{
+    background-image: url(../images/cars.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: black;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+}
+
+.head-text{
+    padding: 15% 0 0 0;
+    font-size: 1.5em;
+    word-spacing: 10px;
+    font-weight: bold;
+    line-height: 1.4em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.highlight{
+    color: whitesmoke;
+}
+
+.text-btn{
+    padding: 12px 50px 12px 20px;
+}
+
+.button{
+    border: none;
+    height: 70px;
+    width: 200px;
+    margin: 20px 0;
+    font-size: 13px;
+    cursor: pointer;
+    font-weight: 900;
+    background: papayawhip;
+    
+}
+
+.button a{
+    text-decoration: none;
+    color: #d61767cc;
+}
+
+.button a:hover{
+    background: #d61767cc;
+    color: papayawhip;
+    padding: 26px 64px;
+}
+
+/* book now */
+.booknow_section{
+    background-image: url(../images/wallpaper.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    padding: 19px;
+    text-align: center;
+}
+
+.booknow_section h2{
+    text-transform: capitalize;
+    font-weight: 900;
+    padding: 35px 0 0 0;
+}
+
+.booknow{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+
+.car{
+    max-width: 24%;
+    max-height: 24%;
+    flex: 25%;
+    margin: 30px 4.5px;
+    background: rgb(230, 228, 228);
+    position: relative;
+    border-radius: 50px;
+}
+
+.car img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+    vertical-align: middle;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25;
+    border-radius: 50px;
+}
+
+.overlay > *{
+    transform: translateY(20px);
+    transition: transform 0.25;
+}
+
+.overlay:hover{
+    opacity: 1;
+}
+
+.overlay:hover > *{
+    transform: translateY(0);
+}
+
+.title{
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.overlay button{
+    border: none;
+    height: 30px;
+    width: 70px;
+}
+
+
+/* contact us */
+.contact_section{
+    background: rgb(22, 22, 22);
+    color: white;
+    line-height: 2em;
+    width: 100%;
+    height: 80vh;
+    padding: 0% 9% 9%;
+    text-align: center;
+}
+
+.social-links-container{
+    display: table;
+    margin: 0 auto; 
+    
+}
+
+.social-links{
+    font-family: "brandon-grotesque", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+}
+
+.social-links li{
+    float: left;
+    padding: 1.25em 0;
+    margin: 9px;
+    list-style: none;
+}
+
+.social-links a{
+    font-size: 0.8125em;
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    margin: 0 auto;
+    line-height: 2em;
+    border: 2px solid transparent;
+    text-align: center;
+    border-radius: 4px;
+    position: relative;
+    padding: 0.5em 1em 0.5em;
+}
+
+.social-links a:hover{
+    background: #e31b6d;
+    color: #fff;
+}
+
+.text{
+    font-size: 2em;
+    text-align: center;
+    line-height: 1.4em;
+    padding: 0 10%;
+    margin-top: 1em;
+}
+
+.text a{
+    text-decoration: none;
+    color: white;
+}
+
+/* footer */
+.footer{
+    background-color: rgb(15, 15, 15);
+    padding:  2% 0%;
+    line-height: 2em;
+    width: 100%;
+}
+
+#copy {
+    font-size: 0.875em;
+    text-transform: uppercase;
+    text-align: center;
+    color: #cccccc;
+    color: rgba(255, 255, 255, 0.2); 
+}
+
+#copy a {
+    color: #e31b6d;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+}
+
+.follow-links {
+    display: table;
+    margin: 1em auto 0 auto; 
+}
+
+.follow-links li{
+    float: left;
+    margin: 9px;
+    list-style: none;
+}
+
+#follow-links a {
+    background: rgba(0, 0, 0, 0.2);
+    text-transform: uppercase;
+    border: 2px solid transparent;
+    display: block;
+    margin: 0 auto;
+    color: rgba(255, 255, 255, 0.2);
+    padding: 0.5em 1em 0.5em;
+    line-height: 2em;
+    font-size: 0.75em;
+    text-align: center;
+    border-radius: 4px;
+    text-decoration: none;
+    position: relative;
+}
+
+#follow-links #follow-twitter a:hover {
+    background: #00aced;
+    color: #fff; 
+}
+  
+
+#follow-links #follow-facebook a:hover {
+    background: #dd3174;
+    color: #fff; 
+}
+
+@media (max-width: 425px) {
+    h1{
+    padding: 55px 0px 35px;
+    letter-spacing: 10px;
+    font-size: 30px;
+    }
+
+    .contact_section{
+        height: 100vh;
+        padding: 0% 3% 4%;
+    }
+
+    .nav{
+        width: 30%;
+    }
+
+    .nav a{
+        margin-left: 1.5px;
+        padding: 1px;
+    }
+
+    .logo{
+        width: 30%;
+    
+    }
+
+    .logo a{
+        margin-left: 1px;
+        font-size: 14px;
+        padding: 1px;
+    }
+
+    
+
+    .car{
+        flex: 100%;
+        max-width: 96%;
+        max-height: 96%;
+        margin: 10px 1px;
+    }
+
+}
+
+@media (max-width: 375px) {
+    h1{
+        padding: 35px 0px 15px;
+        letter-spacing: 10px;
+        font-size: 30px;
+        }
+
+    .contact_section{
+    padding: 0% 3% 3%;
+    }
+
+    .nav{
+        width: 311px;
+    }
+
+    .nav a{
+        margin-left: 1.5px;
+        padding: 1px;
+
+        font-size: 15px;
+    }
+
+    .logo{
+        width: 30%;
+    
+    }
+
+    .logo a{
+        margin-left: 1px;
+        font-size: 14px;
+        padding: 1px;
+    }
+
+}
+
+@media (max-width: 320px) {
+    h1{
+        padding: 25px 0px 10px;
+        letter-spacing: 10px;
+        font-size: 30px;
+        }
+
+    .contact_section{
+    padding: 0% 1% 1%;
+    }
+
+    .social-links li{
+        margin: 3px;
+    }
+
+    .follow-links li{
+        margin: 2px;
+    }
+
+.nav{
+        width: 20%;
+    }
+
+    .nav a{
+        margin-left: 1.5px;
+        padding: 1px;
+        font-size: 11px;
+    }
+
+    .logo{
+        width: 30%;
+    
+    }
+
+    .logo a{
+        margin-left: 1px;
+        font-size: 14px;
+        padding: 1px;
+    }
+
+
+
+}
+
+@media (max-width: 768px) {
+    h1{
+        font-size: 30px;
+        }
+
+        .nav{
+            width: 50%;
+        }
+        
+        .nav a{
+            margin-left: 10px;
+            padding:7px;
+        }
+        
+        .logo{
+            width: 30%;
+        }
+        
+        .logo a{
+            margin-left: 15px;
+            padding: 7px;
+        }
+
+        .car{
+            flex: 50%;
+            max-width: 48%;
+            max-height: 48%;
+            margin: 30px .5px;
+        }
+}
+
+@media (max-width: 1024px) {
+    h1{
+        letter-spacing: 8px;
+        font-size: 40px;
+        }
+
+        .nav{
+            width: 50%;
+        }
+        
+        .nav a{
+            padding: 1px;
+        }
+
+        .logo{
+            width: 30%;
+        }
+        
+        .logo a{
+            padding: 11px;
+            font-size: 20px;
+        }
+
+        .car{
+            margin: 30px 4.5px;
+        }
+
+    }
+
+/* check_out.html */
+/* checkout section */
+.section{
+    width: 100%;
+    background: rgb(230, 227, 227);
+}
+
+.section h1{
+    text-align: center;
+    font-weight: 900;
+    font-size: 30px;
+}
+
+.form{
+    margin: 1% 5%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.column{
+    width: 50%;
+    padding: 35px;
+
+}
+
+.img-section{
+    width: 300px;
+    height: 300px;
+}
+
+.img-section img{
+    width: 100%;
+    height: 100%;
+}
+
+hr{
+    margin: 35px 0;
+}
+
+form{
+    padding: 30px;
+}
+
+input[type='text'],
+input[type='email'],
+input[type='number']
+input[type='submit'] {
+    width: 100%;
+    padding: 5px;
+    margin: 6px;
+    border: 1px solid lightgray;
+}
+
+.btn{
+    border: 1px solid lightgray;
+    width: 40%;
+    cursor: pointer;
+}
+
+select{
+    width: 100%;
+    padding: 5px;
+    margin: 6px;
+    border: 1px solid lightgray;
+}
+
+.number{
+    width: 100%;
+    padding: 5px;
+    margin: 6px;
+    border: 1px solid lightgray;
+}
+
+.number1{
+    width: 30%;
+    padding: 5px;
+    margin: 6px;
+    border: 1px solid lightgray;
+}
